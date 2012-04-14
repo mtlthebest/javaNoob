@@ -1,0 +1,5 @@
+You'll need a file like this:
+
+/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/mysql-connector-java-5.1.18-bin.jar
+
+Matteo Laffranchi

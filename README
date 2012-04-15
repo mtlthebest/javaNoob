@@ -1,29 +1,32 @@
 
-  +-------------------------------------+
-  | MAIN PROGRAMMING LANGUAGES INVOLVED |
-  +-------------------------------------+
+  +----------------------------+
+  | PROGRAMMING LANGUAGE I USE |
+  +----------------------------+
 
-- Java (OpenJDK 7);
-- SQL (only for a certain extent).
+- Java (with open-source JDK 7, see http://openjdk.java.net/).
 
 
   +-------------------------------------+
   | PROGRAMMING/DEVELOPMENT TOOLS I USE |
   +-------------------------------------+
 
-- Main OS: Xubuntu 11.10 "Oneiric Ocelot" amd64;
+- Operating System: Xubuntu 11.10 (Oneiric Ocelot) 64-bit PC
+  (AMD64) desktop (image: xubuntu-11.10-desktop-amd64.iso);
 - L.A.M.P. platform; // sudo apt-get install apache2
                      // mysql-server phpmyadmin
-- Java: OpenJDK 7 (command-line java and javac);
-- Eclipse (Indigo);
-- gedit, nano;
-- Dia (to develop UML diagrams);
-- JDBC, with MySQL connector/J;
+- Java: openjdk-7-jdk, Java(TM) SE Runtime Environment (build
+  1.7.0_03-b04, command-line "java" and "javac");
+- Eclipse Platform v3.7.0 ("INDIGO");
+- gedit v3.2.3;
+- nano v2.2.6;
+- dia v0.97.1 (especially to draw and develop UML diagrams);
+- JDBC, with MySQL connector/J v5.1.19;
 - git (with my GitHub account);
 - Microsoft Access 2003 on Windows 7 (for practicing with
   foreign keys and making comparisons with MySQL, I think it's
   a good sandbox anyway, especially for the InnoDB engine);
-- MySQL Workbench;
+- MySQL Workbench v5.2.39 (for RBDMS design and MySQL schemas
+  forward-engineering);
 - yakuake (I love using bash pressing F12...);
 - PAPER AND PENCIL!!! ;^)
 
@@ -53,7 +56,8 @@ programmer is aiming to do the same...
 Write a program that interacts with a MySQL database, which is
 hosted on a local machine. The program must have a G.U.I.
 (graphic user interface) and allow some basic operations on the
-database (fetch and modify data).
+database (fetch and modify data; i.e. a "C.R.U.D." application,
+please see "http://en.wikipedia.org/wiki/).
 
 
   +------------------------------------+
@@ -95,5 +99,5 @@ By the way... did I tell you that I like helicopters? ;^)
  */                                                   
 ---------------------------------------------------------------
 
-Saturday, 14th of April 2012
+Sunday, 15th of April 2012
 Matteo Laffranchi

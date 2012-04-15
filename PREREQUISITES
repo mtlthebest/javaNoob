@@ -1,5 +1,71 @@
-You'll need a file like this:
 
-/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/mysql-connector-java-5.1.18-bin.jar
+  +---------------+
+  | GIVEN THAT... |
+  +---------------+
 
+- ... I'm trying to develop a basic application (a "C.R.U.D."
+  one, please see "http://en.wikipedia.org/wiki/
+  Create,_read,_update_and_delete") that uses JDBC to connect
+  to a MySQL database (please see README file for further
+  info)...
+
+
+  +--------------------------+
+  | IT SEEMS TO BE USEFUL... |
+  +--------------------------+
+
+- ... having something like connector/J (Oracle Corporation:
+  "MySQL Connector/J is the official JDBC driver for MySQL").
+  For this reason, I downloaded from:
+
+	http://www.mysql.com/downloads/connector/j/
+
+  this file (which is platform-independent):
+	
+	mysql-connector-java-5.1.19.tar.gz
+
+  which is the latest available stable version at the moment
+  I'm writing.
+
+
+  +-----------------+
+  | WHAT I DID THEN |
+  +-----------------+
+
+- Fired up a terminal:
+
+	$ tar xvzf mysql-connector-java-5.1.19.tar.gz
+	$ cd mysql-connector-java-5.1.19/
+	$ sudo cp mysql-connector-java-5.1.19-bin.jar
+	  /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/
+
+- This is obviously to obtain this in the JDK directory I'm
+  using (java-7-openjdk-amd64):
+
+	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/
+	mysql-connector-java-5.1.19-bin.jar
+
+- In Java I use this thing like this (please see "src" folder):
+
+	public class MySQLconnector extends JFrame {
+	...
+	private static final String dbClassName = "com.mysql
+		.jdbc.Driver";
+	...
+	}
+	...
+		private Connection getMySQLConnection(String
+			USERNAME, String PASSWORD, String
+			CONNECTION) throws
+			ClassNotFoundException, SQLException {
+				try {
+					Class
+					.forName(dbClassName);
+				}
+	...
+
+- All this is to use connector/J in source code.
+
+---------------------------------------------------------------
+Sunday, 15th of April 2012
 Matteo Laffranchi

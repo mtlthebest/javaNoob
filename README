@@ -56,8 +56,10 @@ programmer is aiming to do the same...
 Write a program that interacts with a MySQL database, which is
 hosted on a local machine. The program must have a G.U.I.
 (graphic user interface) and allow some basic operations on the
-database (fetch and modify data; i.e. a "C.R.U.D." application,
-please see "http://en.wikipedia.org/wiki/).
+database (fetch and modify data; i.e. a "C.R.U.D." application).
+Please see:
+
+  http://en.wikipedia.org/wiki/Create,_read,_update_and_delete
 
 
   +------------------------------------+

@@ -13,10 +13,10 @@ public class SimpleFactoryTestDriver {
 		Ugp mariugp = new MariUgp(new SoldierFactory());
 
 		crew.add(mariugp.deploy("Laffranchi", "Matteo", "S.T.V."));
-		crew.add(mariugp.deploy("Oliveri", "Gaetano", "1° M.llo"));
-		crew.add(mariugp.deploy("Ungaro", "Cosimo", "C° 1^ cl."));
-		crew.add(mariugp.deploy("Bissacco", "Stefano", "S.T.V."));
-		crew.add(mariugp.deploy("Merola", "Marco", "T.V."));
+		crew.add(mariugp.deploy("Oliver", "Atton", "1° M.llo"));
+		crew.add(mariugp.deploy("Bulgaro", "Mino", "C° 1^ cl."));
+		crew.add(mariugp.deploy("Biscotto", "al Sesamo", "S.T.V."));
+		crew.add(mariugp.deploy("Pasta", "alla Norma", "T.V."));
 
 		// 2. - Once the "Seaman" objects have been created, show their data
 

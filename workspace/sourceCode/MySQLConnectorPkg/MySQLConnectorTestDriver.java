@@ -1,3 +1,5 @@
+package MySQLConnectorPkg;
+
 import java.awt.Color;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
@@ -25,7 +27,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 
-public class MySQLconnector extends JFrame {
+public class MySQLConnectorTestDriver extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private static final String dbClassName = "com.mysql.jdbc.Driver";
@@ -65,7 +67,7 @@ public class MySQLconnector extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MySQLconnector frame = new MySQLconnector();
+					MySQLConnectorTestDriver frame = new MySQLConnectorTestDriver();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -74,7 +76,7 @@ public class MySQLconnector extends JFrame {
 		});
 	}
 
-	public MySQLconnector() {
+	public MySQLConnectorTestDriver() {
 
 		setLocation(100, 100);
 		setTitle("Connect to MySQL database");
@@ -176,7 +178,7 @@ public class MySQLconnector extends JFrame {
 
 	class ProceedButtonHandler implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			MySQLConnector_003 frame = new MySQLConnector_003(connessione,
+			MySQLConnectorFrame frame = new MySQLConnectorFrame(connessione,
 					configSettings);
 			frame.setVisible(true);
 			System.out.println("Running app...");
